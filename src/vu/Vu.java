@@ -418,12 +418,12 @@ public class Vu extends JFrame implements Observateur {
 		controlArea.add(gridCPanel);
 		gridCPanel.setLayout(null);
 
-		JLabel widthLabel = new JLabel("Width:");
-		widthLabel.setBounds(10, 26, 37, 14);
+		JLabel widthLabel = new JLabel("Largeur:");
+		widthLabel.setBounds(10, 26, 59, 14);
 		gridCPanel.add(widthLabel);
 
-		JLabel heightLabel = new JLabel("Height:");
-		heightLabel.setBounds(138, 26, 44, 14);
+		JLabel heightLabel = new JLabel("Taille:");
+		heightLabel.setBounds(150, 26, 44, 14);
 		gridCPanel.add(heightLabel);
 
 		NumberFormat amountFormat = NumberFormat.getInstance();
@@ -435,18 +435,18 @@ public class Vu extends JFrame implements Observateur {
 		amountFormatter.setAllowsInvalid(false);
 		amountFormatter.setCommitsOnValidEdit(true);
 
-		setGridButton = new JButton("Set");
+		setGridButton = new JButton("Confirmer");
 		setGridButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				createGrid();
 			}
 		});
 		setGridButton.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		setGridButton.setBounds(190, 53, 71, 23);
+		setGridButton.setBounds(150, 53, 111, 23);
 		gridCPanel.add(setGridButton);
 
 		widthField = new JTextField();
-		widthField.setBounds(57, 23, 71, 20);
+		widthField.setBounds(69, 23, 71, 20);
 		gridCPanel.add(widthField);
 		widthField.setColumns(10);
 
